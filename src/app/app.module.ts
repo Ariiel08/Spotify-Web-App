@@ -8,11 +8,15 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
-import { routes } from "./app.routing";
-import { NoImagePipe } from './pipes/no-image.pipe';
 import { CardsComponent } from './components/cards/cards.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 
+//Pipes
+import { NoImagePipe } from './pipes/no-image.pipe';
+import { DomseguroPipe } from "./pipes/domseguro.pipe";
+
+//Routes
+import { routes } from "./app.routing";
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +25,7 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     ArtistComponent,
     NavbarComponent,
     NoImagePipe,
+    DomseguroPipe,
     CardsComponent,
     LoadingComponent
   ],

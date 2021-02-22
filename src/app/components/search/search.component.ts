@@ -20,8 +20,7 @@ export class SearchComponent implements OnInit {
   }
 
   search(value: string){
-    console.log(value);
-
+    
     if(value.length > 0){
       this.loading = true;
     }
